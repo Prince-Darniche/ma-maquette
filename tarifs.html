@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs - WebBoost Création Site Web & SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Style spécifique aux tarifs */
+        .pricing-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .pricing-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 30px 25px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        .pricing-card.populaire {
+            border: 2px solid #e67e22;
+            transform: scale(1.05);
+        }
+        .pricing-card.populaire::before {
+            content: "LE PLUS CHOISI";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e67e22;
+            color: white;
+            padding: 5px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .pricing-card h3 {
+            color: #0d4f8b;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        .pricing-card .prix {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+        }
+        .pricing-card .prix span {
+            font-size: 14px;
+            font-weight: normal;
+            color: #666;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .pricing-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .pricing-card ul li i {
+            color: #27ae60;
+            margin-right: 8px;
+        }
+        .pricing-card .btn-service {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-contact">
+                <span><i class="fas fa-phone"></i> +242 06 532 35 12</span>
+                <span><i class="fas fa-envelope"></i> princedarniche.77@gmail.com</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/242065323512"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h2>WEB<span>BOOST</span></h2>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="index.html#services">SITES WEB</a></li>
+                    <li><a href="index.html#services">SEO</a></li>
+                    <li><a href="realisations.html">RÉALISATIONS</a></li>
+                    <li><a href="tarifs.html" class="active">TARIFS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                     <li><a href="a-propos.html"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE TARIFS -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">NOS OFFRES SANS SURPRISE</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Prix fixes, paiement en 3x sans frais. Hébergement et nom de domaine .cg inclus la 1ère année.</p>
+            
+            <div class="pricing-grid">
+                <!-- OFFRE 1 -->
+                <div class="pricing-card">
+                    <h3>SITE VITRINE</h3>
+                    <div class="prix">150.000 <span>FCFA</span></div>
+                    <p>Pour artisans, TPE, professions libérales</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Jusqu’à 5 pages</li>
+                        <li><i class="fas fa-check"></i> Design mobile 100% adapté</li>
+                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
+                        <li><i class="fas fa-check"></i> Optimisation SEO de base</li>
+                        <li><i class="fas fa-check"></i> Lien WhatsApp direct</li>
+                        <li><i class="fas fa-check"></i> Formation 30min offerte</li>
+                        <li><i class="fas fa-check"></i> Livraison en 7 jours</li>
+                    </ul>
+                    <a href="contact.html" class="btn-service">CHOISIR CETTE OFFRE</a>
+                </div>
+
+                <!-- OFFRE 2 -->
+                <div class="pricing-card populaire">
+                    <h3>SITE PRO + SEO</h3>
+                    <div class="prix">350.000 <span>FCFA</span></div>
+                    <p>Pour PME qui veulent des clients Google</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Jusqu’à 10 pages</li>
+                        <li><i class="fas fa-check"></i> Blog intégré</li>
+                        <li><i class="fas fa-check"></i> SEO Local complet</li>
+                        <li><i class="fas fa-check"></i> Fiche Google My Business</li>
+                        <li><i class="fas fa-check"></i> 3 mots-clés ciblés</li>
+                        <li><i class="fas fa-check"></i> Rapport mensuel</li>
+                        <li><i class="fas fa-check"></i> Livraison en 15 jours</li>
+                    </ul>
+                    <a href="contact.html" class="btn-service" style="background-color: #e67e22; color: white;">CHOISIR CETTE OFFRE</a>
+                </div>
+
+                <!-- OFFRE 3 -->
+                <div class="pricing-card">
+                    <h3>E-COMMERCE</h3>
+                    <div class="prix">500.000 <span>FCFA</span></div>
+                    <p>Pour vendre en ligne 24h/24</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Jusqu’à 50 produits</li>
+                        <li><i class="fas fa-check"></i> Paiement Mobile Money MTN/Airtel</li>
+                        <li><i class="fas fa-check"></i> Gestion des stocks</li>
+                        <li><i class="fas fa-check"></i> Espace client</li>
+                        <li><i class="fas fa-check"></i> Formation e-commerce 1h</li>
+                        <li><i class="fas fa-check"></i> SEO produits inclus</li>
+                        <li><i class="fas fa-check"></i> Livraison en 20 jours</li>
+                    </ul>
+                    <a href="contact.html" class="btn-service">CHOISIR CETTE OFFRE</a>
+                </div>
+            </div>
+
+            <!-- MAINTENANCE -->
+            <div style="max-width: 600px; margin: 60px auto 0 auto; text-align: center; background: #f9f9f9; padding: 30px; border: 1px solid #ddd;">
+                <h3 style="color: #0d4f8b;">MAINTENANCE & SÉCURITÉ</h3>
+                <div class="prix" style="font-size: 28px; margin: 10px 0;">15.000 <span>FCFA/mois</span></div>
+                <p>Mises à jour, sauvegardes, sécurité, modifications illimitées. Sommeil tranquille garanti.</p>
+                <a href="contact.html" class="btn-hero">SOUSCRIRE</a>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-size: 14px; color: #666;">
+                * Prix HT. Pas de frais cachés. Devis gratuit sous 24h pour projet sur-mesure.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>© 2026 WEBBOOST - Agence Web & SEO à Brazzaville | <a href="mentions-legales.html" style="color: white;">Mentions légales</a> | <a href="a-propos.html" style="color: white;">À propos</a> | <a href="faq.html" style="color: white;">FAQ</a></p>
+    </footer>
+
+</body>
+</html>
